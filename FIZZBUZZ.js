@@ -1,11 +1,15 @@
 var Output = []; //Empty Array
 var Count = 1;
-
+prompt("Enter Value");
 
 function FizzBuzz()
 {
+    while(Count <= 10){
 
-    if (Count % 3 === 0) {
+    if (Count % 3 === 0 && Count % 5 === 0) {
+        Output.push("FizzBuzz"); 
+   }
+    else if (Count % 3 === 0  ) {
 
         Output.push("Fizz");
         
@@ -18,5 +22,6 @@ function FizzBuzz()
     }
   
     Count++;
+    }
     console.log(Output);
 }
